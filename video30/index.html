@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --color:rgb(107, 107, 192);
+            --seccolor:rgb(160, 87, 160);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+        }
+        ul li:first-child{
+            --color:orange;
+            background-color: var(--color);
+        }
+        .nav{
+            background-color: var(--color);
+           
+        }
+        .container{
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+  
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat doloribus eum quae quam nihil totam,
+        laboriosam maiores architecto! Voluptates eius aperiam earum impedit atque repudiandae suscipit perferendis
+        dicta doloribus sequi qui beatae quasi, ex tempore veritatis inventore ut? Commodi et culpa laboriosam
+        repudiandae laborum autem sunt quia adipisci modi enim odit labore architecto dicta harum eaque accusamus sequi
+        reiciendis, porro sapiente eveniet cum dolor voluptate. Obcaecati culpa voluptate soluta cumque nihil maiores
+        magni inventore sequi quam error. Porro, aliquid! Voluptates sed aliquid eum, accusamus architecto esse quasi
+        nobis ipsam! Dolorem voluptates officia atque quasi delectus. Voluptates voluptatibus facilis ipsum.
+    </div>
+</body>
+
+</html>
