@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        .box:first-child{
+            background-color: #cd6137;
+        }
+        .box::first-line{
+            color: rgb(199, 199, 38);
+        }
+        .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+        p,a,.box,[data-color="primary"]{
+            padding-top: 45px;
+        }
+        .box:nth-child(even){
+            background-color: blue;
+        }
+        .box:nth-last-child(2){
+            background-color: #eb1313;
+        }
+        .box::first-letter{
+            color: rgb(241, 231, 221);
+            font-size: larger;
+        }
+        .boxes::before{
+            content: "Harry is good";
+            color:blue;
+        }
+        .boxes::after{
+            content: "Sigma course is also good";
+            color: red;
+        }
+        ::selection{
+            background-color: black;
+            color: aqua;
+        }
+        input::placeholder{
+            color: rgb(117, 117, 206);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div  data-color="primary" class="box">I am first box</div>
+        <div class="box">Hey I am a box Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error ab illum maiores consectetur delectus ratione pariatur aspernatur assumenda rem quos!</div>
+        <div class="box">Hey I am a box</div>
+        <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+</html>
