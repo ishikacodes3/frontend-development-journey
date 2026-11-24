@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar Practice</title>
+    <style>
+        :root{
+            --pri:rgb(75, 214, 168);
+            --sec:white;
+            --ter:rgb(55, 111, 146);
+            --quad:aquamarine;
+            --fif:rgb(104, 104, 111);
+        }
+        body{
+            background-color: rgb(130, 141, 12);
+            /* background-color: var(--pri); */
+        }
+        .bar{
+            display: flex;
+            /* justify-content:space-between; */
+            justify-content: space-around;
+            width: 100vw;
+            height: 8vh;
+            background-color: rgb(248, 246, 246);
+            /* background-color: var(--sec); */
+            align-items: center;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            padding: 20px 0;
+        }
+        nav a{
+            display: flex;
+            justify-content:space-between;
+            padding: 17px; 
+        }
+        .link{
+            text-decoration: none;
+            color: rgb(29, 30, 5);
+            /* color: var(--ter); */
+            display: flex;
+            justify-content: space-around;
+        }
+        .headfir{
+            /* margin-left: 30px; */
+            color: rgb(29, 30, 5);
+            /* color: var(--ter); */
+        }
+        .headsec{
+            /* color: var(--quad); */
+            color: rgb(130, 141, 12);
+        }
+        .link:hover{
+            background-color: rgb(104, 104, 111);
+            background-color: var(--fif);
+        }
+    </style>
+</head>
+<body>
+    <div class="bar">
+         <H2 class="headfir">Coding <span class="headsec">Market</span> </H2>
+        <nav>
+            <a href="#" class="link">HOME</a>
+            <a href="#" class="link">ABOUT</a>
+            <a href="#" class="link">CONTACT</a>
+            <a href="#" class="link">SERVICES</a>
+            <a href="#" class="link">PROFILE</a>
+        </nav>
+    </div>
+</body>
+</html>
